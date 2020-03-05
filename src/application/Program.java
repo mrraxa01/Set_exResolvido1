@@ -33,7 +33,7 @@ public class Program {
 				String username = fields[0];
 				Date moment = Date.from(Instant.parse(fields[1]));
 				
-				set.add(new LogEntry(username, moment));
+				set.add(new LogEntry(username, moment)); //como o SET não aceita repetição, cada registro será contado uma vez
 				
 				line = br.readLine();
 			}
